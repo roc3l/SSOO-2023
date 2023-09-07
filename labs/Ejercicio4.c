@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 int main() {
     int l1,l2,l3;
     scanf("%d",&l1);
@@ -36,9 +37,14 @@ int main() {
       printf("es un triangulo escaleno");
     }
 
-    int perimetro,semiperimetro,areaheron;
+    int perimetro,semiperimetro,areaheron,s;
 
-    
+    perimetro= l1+l2+l3;
+    s = perimetro/2;
+
+    areaheron= sqrt(s*(s-l1)*(s-l2)*(s-l3));
+
+    printf("\nperimetro es: %d\nsemiperimetro es: %d\narea de heron es: %d",perimetro,s,areaheron);
 
     return 0;
 }
