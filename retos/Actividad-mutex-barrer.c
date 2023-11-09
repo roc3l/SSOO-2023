@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <pthread.h> 
 
+//Jose Velasquez
+
 int a=0;
 pthread_mutex_t mute;       //inicializar mutex
 pthread_barrier_t barrera;   //inicializar barrer
